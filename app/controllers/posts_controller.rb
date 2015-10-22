@@ -15,7 +15,7 @@ class PostsController < ApplicationController
 	def show
 		@post = Post.find(params[:id])
 	end
-
+# private prevents you from doing a mass update (will not be able to use one line of code to create/update a user)in these fields
 	private
 	def post_params
 		params.require(:post).permit(:title, :body)

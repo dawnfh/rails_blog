@@ -1,13 +1,13 @@
 <div id="post_content">
-<h1  class="title">
-	<%= @post.title %>
-</h1>
+	<%= custom_h1_tag @post.title %>
 
-<p class="date">
-	Submitted <%= time_ago_in_words(@post.created_at) %> Ago
-</p>
 
-<p class="body">
-	<%= @post.body %>
-</p>
+
+<!-- below is using a view helper to write html into page. custom_p_tag was created in the Post_Helper.rb file; you do not need the <p> tags -->
+	<h5>Submitted</h5> <%= custom_p_tag time_ago_in_words(@post.created_at) %>Ago 
+	
+		
+	
+
+
 </div>

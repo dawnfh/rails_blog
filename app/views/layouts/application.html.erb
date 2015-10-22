@@ -31,16 +31,17 @@
 
 	<div id="main_content">
 		<div id="header">
-			<%# if current_page?(root_path) %>
-				<!-- <p>All Posts</p>
-			<%# elsif current_page?(about_path) %>
+			<% if current_page?(root_path) %>
+				<p>All Posts</p>
+			<% elsif current_page?(root_path) %>
 				<p>About</p>
-			<%# else %>
-				<%= link_to "Back to All Posts", root_path %> -->
-			<%# end %>
+			<% else %>
+				<%= link_to "Back to All Posts", root_path %>
+			<% end %>
+			
 			<%# if user_signed_in? %>
 			
-			<p>All Post</p>
+			<!-- <p>All Post</p> -->
 
 			<div class="buttons">
 				<button class="button"><%= link_to "New Post", new_post_path %></button>
@@ -57,4 +58,6 @@
 
 
 </body>
+
 </html>
+

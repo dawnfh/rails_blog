@@ -2,6 +2,9 @@
 <html>
 <head>
   <title>BasicBlogRails</title>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="cookies.js"></script>
+	<script src="/scripts/cookieset.js"></script>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <% stylesheet_link_tag 'application', 'https://fonts.googleapis.com/css?family=Corben:400,700' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -23,7 +26,8 @@
 
 		<ul>
 			<li class="category">Social</li>
-			<li><a href="https://twitter.com">Twitter</li>
+			<li>
+				<a href="https://twitter.com">Twitter</a></li>
 		</ul>
 
 		<p class="sign_in">Login</p>

@@ -1,3 +1,8 @@
+$(".delete-post").on("ajax:complete", function(e){ 
+	$(e.currentTarget).parent().hide() });
+
+
+
 // This is a manifest file that'll be compiled into application.js, which will include all the files
 // listed below.
 //

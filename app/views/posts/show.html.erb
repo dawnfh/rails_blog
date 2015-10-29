@@ -1,9 +1,12 @@
 <div id="post_content">
 	<%= custom_h1_tag @post.title %>
 
+	<%=link_to "Delete", post_path(@post), method: :delete, remote: true, class: "delete-post" %>
+
 
 
 <!-- below is using a view helper to write html into page. custom_p_tag was created in the Post_Helper.rb file; you do not need the <p> tags -->
+
 	<h5>Submitted</h5> <%= custom_p_tag time_ago_in_words(@post.created_at) %>Ago 
 	
 		
@@ -11,3 +14,4 @@
 
 
 </div>
+
